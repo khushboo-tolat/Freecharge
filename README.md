@@ -1,4 +1,4 @@
 # Freecharge
-Static website created using AngularJS, HTML and CSS. API used http://starlord.hackerearth.com/recipe
+Static website created using AngularJS, HTML and CSS.
 
 OTP: 123456
