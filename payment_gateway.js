@@ -1,10 +1,9 @@
 var temp = angular.module('myApp', []);
      
-temp.controller('payCtrl', function($scope, $http, $window){
+temp.controller('payCtrl', function($scope, $window){
      var obj = $window.location.search.substring(1);
      var temp = obj.split('=');
-     
-
+    
      $scope.temp_data = [
           {
             "id": 0,
