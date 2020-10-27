@@ -1,0 +1,65 @@
+body {
+     background-color: #ECF0F1;
+     font-family: "Courier New", Courier, monospace;
+}
+
+.heading{
+     text-align: center;
+     font-size: 3em;
+}
+
+.main-content{
+     width: 60%;
+     margin: auto;
+     padding: 20px 10px;
+}
+
+.section{
+     width: 80%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     padding-bottom: 20px;
+}
+
+.product-img{
+     width: 50%;
+}
+
+.product-img img{
+     width: 300px;
+     height: 300px;
+     border-radius: 5%;
+}
+
+.product-desc{
+     width: 50%;
+}
+
+.product-desc p{
+     font-size: 18px;
+}
+
+.product-desc p span, form label{
+     font-weight: 700;
+}
+
+input[type=text], input[type=date], select {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+
+input[type=submit] {
+     width: 100%;
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 20px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}

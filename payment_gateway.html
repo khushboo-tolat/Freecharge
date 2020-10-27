@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Payment Gateway</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" type="text/css" href="payment_gateway.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+          <script type="text/javascript" src="payment_gateway.js"></script>
+     </head>
+     <body ng-app="myApp" ng-controller="payCtrl">
+          <h1 class="heading"> Payment Gateway </h1>
+          <section class="main-content">
+               <h2>Product Description</h2>
+               <section class="section">
+                    <div class="product-img">
+                         <img ng-src={{data.image}}>
+                    </div>
+                    <div class="product-desc">
+                         <p><span>Name: </span> {{ data.name }} </p>
+                         <p><span>Category: </span> {{ data.category }} </p>
+                         <p><span>Price: </span> $ {{ data.price }} </p>
+                         <p><span>Description: </span> {{ data.description }} </p>
+                    </div>
+               </section>
+
+               <hr/>
+
+               <h2 class="margin-top">Payment Details</h2>
+               <section class="section">
+                    <form action="otp_verify.html" method="post">
+                         <label for="card"> Select Card Type: </label>
+                         <select id="card" required>
+                              <option value="0">SELECT</option>
+                              <option value="1">Credit Card</option>
+                              <option value="2">Debit Card</option>
+                         </select>
+
+                         <label for="card-num"> Card Number: </label>
+                         <input type="text" id="card-num" name="card-num" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16" minlength="16" pattern="[0-9]{16}" required>
+
+                         <label for="card-date"> Expiry Date: </label>
+                         <input type="date" id="card-date" name="card-date" placeholder="mm-yy" required>
+
+                         <label for="card-cvv"> CVV Number: </label>
+                         <input type="text" id="card-cvv" name="card-cvv" placeholder="XXX" maxlength="3" minlength="3" pattern="[0-9]{3}" required>
+
+                         <label for="card-name"> Enter Name: </label>
+                         <input type="text" id="card-name" name="card-name" placeholder="Enter your name" required>
+
+                         <input type="submit" value="Submit">
+                    </form>
+               </section>
+          </section>
+     </body>
+</html>

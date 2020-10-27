@@ -1,0 +1,39 @@
+body {
+     background-color: #ECF0F1;
+     font-family: "Courier New", Courier, monospace;
+}
+
+.heading{
+     text-align: center;
+     font-size: 3em;
+}
+.content{
+     margin: auto;
+     width: 20%;
+     padding-top: 30px;
+}
+
+label{
+     font-weight: 700;
+}
+
+input[type=text]{
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+
+input[type=submit] {
+     width: 100%;
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 20px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+

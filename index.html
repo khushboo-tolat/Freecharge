@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Home Page</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" type="text/css" href="home.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+          <script type="text/javascript" src="home.js"></script>
+     </head>
+
+     <body ng-app="myApp" ng-controller="myCtrl">
+          <h1 class="heading"> Select Recipe </h1>
+          <section class="main-content">
+               <div class="card" ng-repeat="d in data" ng-click="payment(d.id)">
+                    <img ng-src="{{d.image}}">
+                    <div class="card-text">
+                         <span> {{ d.name }} </span>
+                         <span> $ {{ d.price }} </span>
+                    </div> 
+               </div>
+          </section>
+     </body>
+</html>
